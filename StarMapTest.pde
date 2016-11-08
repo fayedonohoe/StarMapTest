@@ -2,10 +2,6 @@
 // Create a star map using a text file
 // Student: Faye Donohoe - C15440182
 
-/*  IDEAS
-load file into table
-Make a function for drawing a star point and call it using the table contents as parameters
-*/
 
 ArrayList<Star> stars = new ArrayList<Star>();
 
@@ -19,6 +15,7 @@ void setup()
   //println(starTable.getRowCount());
   
   loadStarData();
+  displayStars();
   
 }
   
@@ -30,11 +27,20 @@ void loadStarData()
       Star star = new Star(row);
       stars.add(star);  
     }
-    
   }
+
 
 
 void draw()
 {
+  
+  void displayStars()
+{
+  currentStar = <
+  x = currentStar.Xg;
+  
+  
+  
+}
   
 }

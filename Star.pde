@@ -48,6 +48,12 @@ class Star
          absMag = row.getFloat("AbsMag");
          
       }
+      
+      //Converts object to string so it can be printed
+    String toString()
+    {
+      return hab + "\t" + displayName + "\t" + distance + "\t" + Xg + "\t" + Yg + "\t" + Zg + "\t" + absMag;
+    }
             
     
 }
