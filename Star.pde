@@ -8,25 +8,25 @@ class Star
   float Zg;
   float absMag;
   
-  //Default constructor
+  /*Default constructor
   Star()
   {
     hab = 0;
     displayName = "";
-    distance = 0;
     distance = 0;
     Xg = 0;
     Yg = 0;
     Zg = 0;
     absMag = 0;
   }
+  */
   
   //Paramaterised Constructor
   
-    Star( int hab, String displayName, float distance, 
+/*    Star( int hab, String displayName, float distance, 
           float Xg, float Yg, float Zg, float absMag)
-      {
-        //Disambiguate
+      {   
+           //Disambiguate
         this.hab = hab;
         this. displayName = displayName;
         this.distance = distance;
@@ -34,6 +34,19 @@ class Star
         this.Yg = Yg;
         this.Zg = Zg;
         this.absMag = absMag;
+      }
+ */
+ 
+   Star(TableRow row)
+      {
+         hab = row.getInt("Hab?");
+         displayName = row.getString("Display Name");
+         distance = row.getFloat("Distance");
+         Xg = row.getFloat("Xg");
+         Yg = row.getFloat("Yg");
+         Zg = row.getFloat("Zg");
+         absMag = row.getFloat("AbsMag");
+         
       }
             
     
